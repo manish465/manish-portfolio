@@ -5,8 +5,10 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
 import { DistributedSection } from './components/DistributedSection';
+import { LabSection } from './components/LabSection';
+import { FieldNotes } from './components/FieldNotes';
 import { KokoroSim } from './components/simulations/KokoroSim';
-import { projectsData } from './data';
+import { projectsData, labData, notesData } from './data';
 
 const PortfolioShell: React.FC = () => {
   // Activate global keyboard command listener (Space for mode toggle, 1-5 for jumps)
@@ -49,29 +51,13 @@ const PortfolioShell: React.FC = () => {
           {/* Section 02: Distributed Systems & Core Microservices */}
           <DistributedSection projects={projectsData} />
 
-          {/* Section 03: The Engineering Lab (Placeholder for Milestone 5) */}
-          <section id="lab" className="scroll-mt-20">
-            <div className="flex items-center space-x-3 pb-4 border-b border-hairline">
-              <span className="font-mono text-xs text-amber-accent">03.</span>
-              <h2 className="font-serif text-2xl text-slate-100">The Engineering Lab</h2>
-            </div>
-            <div className="mt-6 p-8 rounded-xl bg-surface-card/40 border border-hairline/60 text-center font-mono text-xs text-slate-500">
-              [Lab prototypes & Consistent Hash Ring visualizer incoming in Milestone 5]
-            </div>
-          </section>
+          {/* Section 03: The Engineering Lab */}
+          <LabSection experiments={labData} />
 
-          {/* Section 04: Engineering Field Notes (Placeholder for Milestone 5) */}
-          <section id="notes" className="scroll-mt-20">
-            <div className="flex items-center space-x-3 pb-4 border-b border-hairline">
-              <span className="font-mono text-xs text-slate-500">04.</span>
-              <h2 className="font-serif text-2xl text-slate-100">Engineering Field Notes & Invariants</h2>
-            </div>
-            <div className="mt-6 p-8 rounded-xl bg-surface-card/40 border border-hairline/60 text-center font-mono text-xs text-slate-500">
-              [Obsidian field notes incoming in Milestone 5]
-            </div>
-          </section>
+          {/* Section 04: Engineering Field Notes */}
+          <FieldNotes notes={notesData} />
 
-          {/* Section 05: Production Experience Dossier (Placeholder for Milestone 6) */}
+          {/* Section 05: Production Experience Dossier (Incoming in Milestone 6) */}
           <section id="experience" className="scroll-mt-20">
             <div className="flex items-center space-x-3 pb-4 border-b border-hairline">
               <span className="font-mono text-xs text-slate-500">05.</span>
