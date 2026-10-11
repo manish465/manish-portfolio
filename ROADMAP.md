@@ -10,7 +10,7 @@
 - [x] **Milestone 0: Project Scaffolding, Tooling & Design System Tokens** *(Completed: 2026-10-11)*
 - [x] **Milestone 1: Static Typed Domain Store & Data Models** *(Completed: 2026-10-11)*
 - [x] **Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine** *(Completed: 2026-10-11)*
-- [ ] **Milestone 3: Flagships & Distributed Systems Showcase (Dual View)**
+- [x] **Milestone 3: Flagships & Distributed Systems Showcase (Dual View)** *(Completed: 2026-10-11)*
 - [ ] **Milestone 4: Pure Client-Side Interactive Simulators**
 - [ ] **Milestone 5: The Engineering Lab & Field Notes Drawer**
 - [ ] **Milestone 6: Production Experience Dossier, Polish & Launch Verification**
@@ -67,7 +67,7 @@
 
 ---
 
-### [ ] Milestone 3: Flagships & Distributed Systems Showcase (Dual View)
+### [x] Milestone 3: Flagships & Distributed Systems Showcase (Dual View) *(Completed: 2026-10-11)*
 * **Deliverables**:
   - Build `ProjectCard.tsx` with dual-layer rendering:
     - *Editorial View*: Clean narrative (problem, solution, business/technical impact, tech tags).
