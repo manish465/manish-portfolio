@@ -7,8 +7,10 @@ import { ProjectCard } from './components/ProjectCard';
 import { DistributedSection } from './components/DistributedSection';
 import { LabSection } from './components/LabSection';
 import { FieldNotes } from './components/FieldNotes';
+import { ExperienceDossier } from './components/ExperienceDossier';
+import { Footer } from './components/Footer';
 import { KokoroSim } from './components/simulations/KokoroSim';
-import { projectsData, labData, notesData } from './data';
+import { projectsData, labData, notesData, experienceData, profileData } from './data';
 
 const PortfolioShell: React.FC = () => {
   // Activate global keyboard command listener (Space for mode toggle, 1-5 for jumps)
@@ -22,7 +24,7 @@ const PortfolioShell: React.FC = () => {
       <main className="flex-1">
         <Hero />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
           {/* Section 01: Featured Systems & Products (Flagships) */}
           <section id="work" className="scroll-mt-20">
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between pb-4 mb-8 border-b border-hairline">
@@ -57,22 +59,13 @@ const PortfolioShell: React.FC = () => {
           {/* Section 04: Engineering Field Notes */}
           <FieldNotes notes={notesData} />
 
-          {/* Section 05: Production Experience Dossier (Incoming in Milestone 6) */}
-          <section id="experience" className="scroll-mt-20">
-            <div className="flex items-center space-x-3 pb-4 border-b border-hairline">
-              <span className="font-mono text-xs text-slate-500">05.</span>
-              <h2 className="font-serif text-2xl text-slate-100">Production Experience Dossier</h2>
-            </div>
-            <div className="mt-6 p-8 rounded-xl bg-surface-card/40 border border-hairline/60 text-center font-mono text-xs text-slate-500">
-              [Production career track record incoming in Milestone 6]
-            </div>
-          </section>
+          {/* Section 05: Production Experience Dossier */}
+          <ExperienceDossier experience={experienceData} />
         </div>
       </main>
 
-      <footer className="border-t border-hairline/80 py-8 text-center text-xs font-mono text-slate-500">
-        MANISH SAHU © {new Date().getFullYear()} — ZERO BACKEND / 100% CLIENT-SIDE
-      </footer>
+      {/* Footer Colophon & Direct Resume Download */}
+      <Footer profile={profileData} />
     </div>
   );
 };
