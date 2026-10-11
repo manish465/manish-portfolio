@@ -1,6 +1,7 @@
 import React from 'react';
 import { Project } from '../types';
 import { ProjectCard } from './ProjectCard';
+import { RateLimiterSim } from './simulations/RateLimiterSim';
 import { Cpu, Terminal, Shield, Zap, Database } from 'lucide-react';
 
 interface DistributedSectionProps {
@@ -86,7 +87,10 @@ export const DistributedSection: React.FC<DistributedSectionProps> = ({ projects
       {/* Render Distributed Projects */}
       <div className="space-y-10">
         {rateLimiterProject && (
-          <ProjectCard project={rateLimiterProject} />
+          <ProjectCard
+            project={rateLimiterProject}
+            renderInteractiveSlot={<RateLimiterSim />}
+          />
         )}
 
         {eventServiceProject && (

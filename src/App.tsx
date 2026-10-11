@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
 import { DistributedSection } from './components/DistributedSection';
+import { KokoroSim } from './components/simulations/KokoroSim';
 import { projectsData } from './data';
 
 const PortfolioShell: React.FC = () => {
@@ -36,7 +37,11 @@ const PortfolioShell: React.FC = () => {
 
             <div className="space-y-10">
               {flagshipProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  renderInteractiveSlot={project.id === 'kokoro-chat-reader' ? <KokoroSim /> : undefined}
+                />
               ))}
             </div>
           </section>
@@ -44,14 +49,14 @@ const PortfolioShell: React.FC = () => {
           {/* Section 02: Distributed Systems & Core Microservices */}
           <DistributedSection projects={projectsData} />
 
-          {/* Section 03: The Engineering Lab (Placeholder for Milestone 4/5) */}
+          {/* Section 03: The Engineering Lab (Placeholder for Milestone 5) */}
           <section id="lab" className="scroll-mt-20">
             <div className="flex items-center space-x-3 pb-4 border-b border-hairline">
               <span className="font-mono text-xs text-amber-accent">03.</span>
               <h2 className="font-serif text-2xl text-slate-100">The Engineering Lab</h2>
             </div>
             <div className="mt-6 p-8 rounded-xl bg-surface-card/40 border border-hairline/60 text-center font-mono text-xs text-slate-500">
-              [Lab prototypes & interactive simulators incoming in Milestone 4 & 5]
+              [Lab prototypes & Consistent Hash Ring visualizer incoming in Milestone 5]
             </div>
           </section>
 
