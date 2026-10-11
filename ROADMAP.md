@@ -9,7 +9,7 @@
 
 - [x] **Milestone 0: Project Scaffolding, Tooling & Design System Tokens** *(Completed: 2026-10-11)*
 - [x] **Milestone 1: Static Typed Domain Store & Data Models** *(Completed: 2026-10-11)*
-- [ ] **Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine**
+- [x] **Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine** *(Completed: 2026-10-11)*
 - [ ] **Milestone 3: Flagships & Distributed Systems Showcase (Dual View)**
 - [ ] **Milestone 4: Pure Client-Side Interactive Simulators**
 - [ ] **Milestone 5: The Engineering Lab & Field Notes Drawer**
@@ -51,7 +51,7 @@
 
 ---
 
-### [ ] Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine
+### [x] Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine *(Completed: 2026-10-11)*
 * **Deliverables**:
   - Implement `ViewModeContext` managing `'editorial'` vs. `'architecture'` mode with `localStorage` persistence.
   - Implement `useKeyCommand` hook listening for `Space` (toggle mode) and `1-4` (quick scroll).
