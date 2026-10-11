@@ -8,7 +8,7 @@
 ## Milestone Overview
 
 - [x] **Milestone 0: Project Scaffolding, Tooling & Design System Tokens** *(Completed: 2026-10-11)*
-- [ ] **Milestone 1: Static Typed Domain Store & Data Models**
+- [x] **Milestone 1: Static Typed Domain Store & Data Models** *(Completed: 2026-10-11)*
 - [ ] **Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine**
 - [ ] **Milestone 3: Flagships & Distributed Systems Showcase (Dual View)**
 - [ ] **Milestone 4: Pure Client-Side Interactive Simulators**
@@ -34,7 +34,7 @@
 
 ---
 
-### [ ] Milestone 1: Static Typed Domain Store & Data Models
+### [x] Milestone 1: Static Typed Domain Store & Data Models *(Completed: 2026-10-11)*
 * **Deliverables**:
   - Implement domain TypeScript interfaces in `src/types/index.ts` (`Project`, `ArchitectureSpec`, `LabExperiment`, `FieldNote`, `ProductionExperience`, `Profile`, `ViewMode`).
   - Populate `src/data/profile.ts`: Bio, coordinates, current bets, resume PDF trigger.
