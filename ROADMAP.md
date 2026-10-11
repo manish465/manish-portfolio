@@ -13,7 +13,7 @@
 - [x] **Milestone 3: Flagships & Distributed Systems Showcase (Dual View)** *(Completed: 2026-10-11)*
 - [x] **Milestone 4: Pure Client-Side Interactive Simulators** *(Completed: 2026-10-11)*
 - [x] **Milestone 5: The Engineering Lab & Field Notes Drawer** *(Completed: 2026-10-11)*
-- [ ] **Milestone 6: Production Experience Dossier, Polish & Launch Verification**
+- [x] **Milestone 6: Production Experience Dossier, Polish & Launch Verification** *(Completed: 2026-10-11)*
 
 ---
 
@@ -114,7 +114,7 @@
 
 ---
 
-### [ ] Milestone 6: Production Experience Dossier, Polish & Launch Verification
+### [x] Milestone 6: Production Experience Dossier, Polish & Launch Verification *(Completed: 2026-10-11)*
 * **Deliverables**:
   - Build `ExperienceDossier.tsx`: Production engineering career track record, scale handled, systems owned.
   - Build `Footer.tsx`: Direct colophon, 1-click resume download, and contact coordinates.
