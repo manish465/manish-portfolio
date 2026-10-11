@@ -11,7 +11,7 @@
 - [x] **Milestone 1: Static Typed Domain Store & Data Models** *(Completed: 2026-10-11)*
 - [x] **Milestone 2: Global Shell, HUD Header & Dual-Layer State Machine** *(Completed: 2026-10-11)*
 - [x] **Milestone 3: Flagships & Distributed Systems Showcase (Dual View)** *(Completed: 2026-10-11)*
-- [ ] **Milestone 4: Pure Client-Side Interactive Simulators**
+- [x] **Milestone 4: Pure Client-Side Interactive Simulators** *(Completed: 2026-10-11)*
 - [ ] **Milestone 5: The Engineering Lab & Field Notes Drawer**
 - [ ] **Milestone 6: Production Experience Dossier, Polish & Launch Verification**
 
@@ -84,7 +84,7 @@
 
 ---
 
-### [ ] Milestone 4: Pure Client-Side Interactive Simulators
+### [x] Milestone 4: Pure Client-Side Interactive Simulators *(Completed: 2026-10-11)*
 * **Deliverables**:
   - Build `RateLimiterSim.tsx`: Interactive token bucket / sliding window simulator with capacity/refill sliders and burst testing (HTTP 200 vs 429).
   - Build `HashRingSim.tsx`: Interactive SVG Consistent Hash Ring demonstrating virtual nodes, key distribution, and add/drop node rebalancing.
