@@ -47,6 +47,6 @@ export const profileData: Profile = {
         linkedin: "https://www.linkedin.com/in/sahum/",
         email: "contact@manishsahu.dev",
     },
-    // Respect Vite's configured base path so this works on GitHub project pages.
-    resumePdfUrl: `${import.meta.env.BASE_URL}resume.pdf`,
+    // Relative URL works under the GitHub Pages project path.
+    resumePdfUrl: "resume.pdf",
 };
