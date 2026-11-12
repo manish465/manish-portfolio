@@ -92,5 +92,4 @@ export interface Profile {
     linkedin: string;
     email: string;
   };
-  resumePdfUrl: string;
 }

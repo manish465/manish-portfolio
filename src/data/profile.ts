@@ -47,6 +47,4 @@ export const profileData: Profile = {
         linkedin: "https://www.linkedin.com/in/sahum/",
         email: "contact@manishsahu.dev",
     },
-    // Relative URL works under the GitHub Pages project path.
-    resumePdfUrl: "resume.pdf",
 };

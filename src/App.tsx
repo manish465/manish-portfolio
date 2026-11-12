@@ -64,7 +64,7 @@ const PortfolioShell: React.FC = () => {
         </div>
       </main>
 
-      {/* Footer Colophon & Direct Resume Download */}
+      {/* Footer Colophon & Channels */}
       <Footer profile={profileData} />
     </div>
   );

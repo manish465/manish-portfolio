@@ -1,6 +1,6 @@
 import React from 'react';
 import { useViewMode } from '../context/ViewModeContext';
-import { Layers, BookOpen, FileText, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Layers, BookOpen, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { profileData } from '../data';
 
 export const Header: React.FC = () => {
@@ -69,15 +69,15 @@ export const Header: React.FC = () => {
             </kbd>
           </button>
 
-          {/* Resume PDF Download */}
+          {/* LinkedIn Connect */}
           <a
-            href={profileData.resumePdfUrl}
+            href={profileData.socials.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-surface-card hover:bg-surface-hover border border-hairline text-xs font-mono text-slate-200 hover:text-slate-100 transition-colors"
           >
-            <FileText className="w-3.5 h-3.5 text-slate-400" />
-            <span className="hidden sm:inline">Resume</span>
+            <Linkedin className="w-3.5 h-3.5 text-blue-400" />
+            <span className="hidden sm:inline">LinkedIn</span>
           </a>
 
           {/* External Social Links */}

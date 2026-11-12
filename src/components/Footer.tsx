@@ -1,6 +1,6 @@
 import React from 'react';
 import { Profile } from '../types';
-import { FileText, Github, Linkedin, Mail, MapPin, Terminal, ArrowUpRight } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Terminal, ArrowUpRight } from 'lucide-react';
 
 interface FooterProps {
   profile: Profile;
@@ -28,22 +28,22 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
             </div>
           </div>
 
-          {/* Direct Resume Download */}
+          {/* Direct LinkedIn Connect */}
           <div className="space-y-3">
             <span className="text-slate-300 font-semibold uppercase tracking-wider text-[11px] block">
-              Official Resume
+              Professional Network
             </span>
             <p className="text-slate-400 text-[11px] font-sans">
-              Clean 1-page document detailing production tenure, scale handled, and systems authored.
+              Open to conversations on distributed systems, backend engineering, and technical architecture.
             </p>
             <a
-              href={profile.resumePdfUrl}
+              href={profile.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-amber-accent/20 hover:bg-amber-accent/30 border border-amber-accent/60 text-amber-300 transition-colors cursor-pointer font-semibold"
+              className="inline-flex items-center space-x-2 px-3.5 py-2 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 border border-blue-500/60 text-blue-300 transition-colors cursor-pointer font-semibold"
             >
-              <FileText className="w-4 h-4" />
-              <span>Download PDF Resume</span>
+              <Linkedin className="w-4 h-4" />
+              <span>Connect on LinkedIn</span>
             </a>
           </div>
 
